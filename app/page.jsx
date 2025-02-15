@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return ( <div className="mt-40">
@@ -14,8 +15,8 @@ export default function Home() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {statsData.map((stat, index)=>(
           <div key={index} className="text-center">
-            <div className="text-4xl font-bold text-blue-600 mb-2">{statsData.value}</div>
-            <div className="text-gray-600">{statsData.label}</div>
+            <div className="text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
+            <div className="text-gray-600">{stat.label}</div>
           </div>
         ))}
       </div>
@@ -87,12 +88,17 @@ export default function Home() {
   {/* Take Control Section*/}
   <section className="py-20 bg-gradient-to-r from-[#4b0082] via-[#6a0dad] to-[#3a2f80]">  
     <div className="container mx-auto px-4 text-center">
-      <h2 className="text-3xl font-bold text-center mb-4">
+      <h2 className="text-3xl font-bold text-white mb-4">
          Take Control Of Your Finances Now!
         </h2>
         <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
         Why guess? Let AI optimize your finances and help you grow!
         </p>
+        <Link href="/dashboard">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 animate-bounce">
+                Start Free Trial
+            </Button>
+        </Link>
     </div>
   </section>
 </div>
