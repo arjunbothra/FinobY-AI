@@ -12,7 +12,7 @@ const DashboardLayout = () => {
        {/* Dashboard */}
         <Suspense fallback={ <BarLoader className= "mt-40" width={"100%"} color="#00aaff" />} >
             <DashboardPage />
-        </Suspense>
+        </Suspense>  
     </div>
   )
 }
