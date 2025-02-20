@@ -10,22 +10,22 @@ import { AccountCard } from './_components/account-card';
 async function DashboardPage() {
   const accounts = await getUserAccounts();
 
-  // const defaultAccount = account?.find((account) => account.isDefault);
+  const defaultAccount = accounts?.find((account) => account.isDefault);
 
-  // let budgetData = null;
-  // if (defaultAccount) {
-  //   budgetData = await getCurrentBudget(defaultAccount.id);
-  // }
+  let budgetData = null;
+  if (defaultAccount) {
+    budgetData = await getCurrentBudget(defaultAccount.id);
+  }
 
   return (
     <div className="space-y-8">
       {/* Budget Progress */}
-      {/* {defaultAccount && (
+      {defaultAccount && (
         <BudgetProgress
           initialBudget={budgetData?.budget}
           currentExpenses={budgetData?.currentExpenses || 0}
         />
-      )} */}
+      )}
 
       {/* Overview */}
 

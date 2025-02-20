@@ -1,10 +1,5 @@
 "use client";
 
-import { ArrowUpRight, ArrowDownRight, CreditCard } from "lucide-react";
-import { Switch } from "@/components/ui/switch";
-import { Badge } from "@/components/ui/badge";
-import { useEffect } from "react";
-import useFetch from "@/hooks/use-fetch";
 import {
   Card,
   CardContent,
@@ -12,10 +7,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
+import useFetch from "@/hooks/use-fetch";
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
-import { toast } from "sonner";
 import { updateDefaultAccount } from "@/actions/accounts";
+import { toast } from "sonner";
 
 export function AccountCard({ account }) {
   const { name, type, balance, id, isDefault } = account;
@@ -42,7 +41,7 @@ export function AccountCard({ account }) {
     if (updatedAccount?.success) {
       toast.success("Default account updated successfully");
     }
-  }, [updatedAccount]);
+  }, [updatedAccount, updateDefaultLoading]); //DefaultLoading remove
 
   useEffect(() => {
     if (error) {

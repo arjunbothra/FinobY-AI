@@ -1,10 +1,11 @@
-import { Button, Container, Head, Heading, Html, Preview, Section, Text } from "@react-email/components";
+import { Body, Container, Head, Heading, Html, Preview, Section, Text } from "@react-email/components";
 import * as React from "react";
 
 export default function EmailTemplate({
     userName = "",
-    type = "monthly-report",
+    type = "budget-alert",
     data = {
+      
     },
 }) {
     if (type === "monthly-report"){

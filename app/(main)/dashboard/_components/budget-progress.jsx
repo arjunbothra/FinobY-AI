@@ -10,9 +10,10 @@ import { Check, Pencil, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner';
 
-const BudgetProgress = () => {
+const BudgetProgress = ({initialBudget, currentExpenses}) => {
     const [isEditing, setIsEditing] = useState(false);
-  const [newBudget, setNewBudget] = useState(
+  
+    const [newBudget, setNewBudget] = useState(
     initialBudget?.amount?.toString() || ""
   );
 
@@ -25,7 +26,7 @@ const BudgetProgress = () => {
         fn: updateBudgetFn,
         data: updatedBudget,
         error,
-      } = useFetch(updateBudget);
+      } = useFetch(updateBudget); 
 
       const handleUpdateBudget = async () => {
         const amount = parseFloat(newBudget);

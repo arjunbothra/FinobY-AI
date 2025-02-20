@@ -1,29 +1,31 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { format } from "date-fns";
 import {
   ChevronDown,
-  ChevronUp,
-  MoreHorizontal,
-  Trash,
-  Search,
-  X,
   ChevronLeft,
   ChevronRight,
-  RefreshCw,
+  ChevronUp,
   Clock,
+  MoreHorizontal,
+  RefreshCw,
+  Search,
+  Trash,
+  X,
 } from "lucide-react";
-import { format } from "date-fns";
+import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -33,27 +35,26 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Button } from "@/components/ui/button";
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import { categoryColors } from "@/data/categories";
-import { bulkDeleteTransactions } from "@/actions/account";
+import { cn } from "@/lib/utils";
+// import { bulkDeleteTransactions } from "@/actions/account";
+import { bulkDeleteTransactions } from "@/actions/accounts";
 import useFetch from "@/hooks/use-fetch";
-import { BarLoader } from "react-spinners";
 import { useRouter } from "next/navigation";
+import { BarLoader } from "react-spinners";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -392,7 +393,7 @@ export function TransactionTable({ transactions }) {
                               <RefreshCw className="h-3 w-3" />
                               {
                                 RECURRING_INTERVALS[
-                                  transaction.recurringInterval
+                                transaction.recurringInterval
                                 ]
                               }
                             </Badge>

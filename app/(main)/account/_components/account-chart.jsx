@@ -104,7 +104,7 @@ export function AccountChart({ transactions }) {
           </div>
           <div className="text-center">
             <p className="text-muted-foreground">Total Expenses</p>
-            <p className="text-lg font-bold text-red-500">
+            <p className="text-lg font-bold text-red-800">
               ${totals.expense.toFixed(2)}
             </p>
           </div>
@@ -114,7 +114,7 @@ export function AccountChart({ transactions }) {
               className={`text-lg font-bold ${
                 totals.income - totals.expense >= 0
                   ? "text-green-500"
-                  : "text-red-500"
+                  : "text-red-800"
               }`}
             >
               ${(totals.income - totals.expense).toFixed(2)}
@@ -158,7 +158,7 @@ export function AccountChart({ transactions }) {
               <Bar
                 dataKey="expense"
                 name="Expense"
-                fill="#ef4444"
+                fill="#991b1b"
                 radius={[4, 4, 0, 0]}
               />
             </BarChart>
