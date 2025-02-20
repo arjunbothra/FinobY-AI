@@ -9,6 +9,12 @@ const nextConfig = {
             },
         ],
     },
+
+    wxperimental: {
+        serverActions: {
+            bodySizeLimit: "5mb",
+        },
+    },
 };
 
 export default nextConfig;
