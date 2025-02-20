@@ -43,7 +43,7 @@ const HeroSection = () => {
               Start Your Journey Now
             </Button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard">
             <Button size="lg" variant="outline" className="px-8">
               Start Demo
             </Button>
