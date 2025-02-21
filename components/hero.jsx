@@ -49,8 +49,8 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <div className="hero-image-wrapper">
-          <div ref={imageRef} className="hero-image">
+        <div className="">
+          <div ref={imageRef} className="">
             <Image 
               src="/Tracking.jpg"
               width={1280}
