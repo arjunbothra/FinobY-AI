@@ -8,7 +8,7 @@
 
 ## 🌟 Features
 
-- **🔍 AI-Powered Finance Tracking** – AI Scanner helps automatically categorize and analyze expenses\
+- **🔍 AI-Powered Receipt Scanner For Transaction Tracking** – AI Scanner helps automatically categorize and analyze expenses\
 ![AI Screenshot](assests/AddTransaction.png)
 
 - **📊 User Dashboard Real-Time Budget Monitoring** – Set budgets and receive alerts when nearing limits.\
@@ -22,7 +22,10 @@
 
 - **📈 Interactive Charts** – Visualize spending patterns with dynamic graphs.\
   &#x20;
-![Chart](assests/Chart1.png) ![Charts](assets/Chart2.png)
+<p align="center">
+    <img src="assests/Chart1.png"  width="70%" alt="Chart 1">
+    <img src="assests/Chart2.png"  width="70%" alt="Chart 2">
+  </p>
 
 - **🛠 Full-Stack Architecture** – Built with modern web technologies.\
 ![Home Page](assests/Home.png)
