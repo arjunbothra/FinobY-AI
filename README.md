@@ -9,23 +9,23 @@
 ## 🌟 Features
 
 - **🔍 AI-Powered Finance Tracking** – AI Scanner helps automatically categorize and analyze expenses\
-![AI Screenshot](assets/AddTransaction.png)
+![AI Screenshot](assests/AddTransaction.png)
 
 - **📊 User Dashboard Real-Time Budget Monitoring** – Set budgets and receive alerts when nearing limits.\
-![Dashboard](assets/Dashboard.png)
+![Dashboard](assests/Dashboard.png)
 
 - **📅 Recurring & Non-Recurring Transactions Tracking** – Schedule automatic payments and recurring expenses.\
-![Transaction](assets/Transactions.png)
+![Transaction](assests/Transactions.png)
 
 - **📧 Email Notifications** – Get budget alerts directly via email using Resend and React Emails.\
-![Email](assets/Email.png)
+![Email](assests/Email.png)
 
 - **📈 Interactive Charts** – Visualize spending patterns with dynamic graphs.\
   &#x20;
-![Chart](assets/Chart1.png) ![Charts](assets/Chart2.png)
+![Chart](assests/Chart1.png) ![Charts](assets/Chart2.png)
 
 - **🛠 Full-Stack Architecture** – Built with modern web technologies.\
-![Home Page](assets/Home.png)
+![Home Page](assests/Home.png)
 
 ## 🛠️ Tech Stack
 
