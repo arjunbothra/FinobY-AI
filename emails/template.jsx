@@ -46,10 +46,10 @@ const PREVIEW_DATA = {
 };
 
 export default function EmailTemplate({
-  userName = "piyush",
-  type = "monthly-report",
+  userName = "",
+  type = "monthly-alert",
   data = {
-    
+
   },
 }) {
   if (type === "monthly-report") {

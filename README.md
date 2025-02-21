@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Finoby AI
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Finoby AI** is an intelligent finance tracking platform that helps users manage their budgets, track expenses, and analyze financial trends using AI-driven insights. It provides real-time notifications, customizable transaction categories, and detailed financial reports.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌟 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **🔍 AI-Powered Finance Tracking** – AI Scanner helps automatically categorize and analyze expenses\
+![AI Screenshot](assets/AddTransaction.png)
 
-## Learn More
+- **📊 User Dashboard Real-Time Budget Monitoring** – Set budgets and receive alerts when nearing limits.\
+![Dashboard](assets/Dashboard.png)
 
-To learn more about Next.js, take a look at the following resources:
+- **📅 Recurring & Non-Recurring Transactions Tracking** – Schedule automatic payments and recurring expenses.\
+![Transaction](assets/Transactions.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **📧 Email Notifications** – Get budget alerts directly via email using Resend and React Emails.\
+![Email](assets/Email.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **📈 Interactive Charts** – Visualize spending patterns with dynamic graphs.\
+  &#x20;
+![Chart](assets/Chart1.png) ![Charts](assets/Chart2.png)
 
-## Deploy on Vercel
+- **🛠 Full-Stack Architecture** – Built with modern web technologies.\
+![Home Page](assets/Home.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** Next.js, Tailwind CSS, React
+- **Backend:** Next.js
+- **Email Services:** Resend, React Emails
+- **State Management:** React Hooks
+- **Charting:** Recharts
+
+## 🏠 Try it Yourself - Live Demo
+
+🚀 Check out the live version of Finoby AI:\
+[**Finoby AI Live**](https://finoby-ai.vercel.app)
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+
+   ```sh
+   git clone https://github.com/arjunbothra/FinobY-AI.git
+   ```
+
+2. **Install dependencies**
+
+   ```sh
+   npm install
+   ```
+
+3. **Set up environment variables**
+
+   - Create a `.env` file in the root directory.
+   - Add the required environment variables (e.g., database connection string, API keys).
+
+4. **Run the development server**
+
+   ```sh
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## 📧 Email Notifications
+
+Finoby AI integrates **Resend** for email alerts. The email templates are built with **React Emails**, allowing dynamic and responsive email designs.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📞 Contact
+
+For support or collaboration, reach out via:\
+[LinkedIn - Arjun Bothra](https://www.linkedin.com/in/arjunbothra02)
+
+
+
